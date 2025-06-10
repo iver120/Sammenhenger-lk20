@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utforsk Celletyper</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <h1>Utforsk Forskjellige Celletyper!</h1>
+
+    <div class="container">
+        <div class="cell-selector">
+            <h2>Velg en celletype:</h2>
+            <!-- Disse knappene matcher data-cell attributtene brukt i script.js -->
+            <button class="cell-type-button" data-cell="bakterie">Bakteriecelle</button>
+            <button class="cell-type-button" data-cell="plante">Plantecelle</button>
+            <button class="cell-type-button" data-cell="dyr">Dyrecelle</button>
+        </div>
+
+        <div class="cell-info-display">
+            <!-- ID-ene her matcher de som brukes i getElementById i script.js -->
+            <h2 id="cell-name-title">Velkommen!</h2>
+            <img id="cell-image" src="placeholder.png" alt="Illustrasjon av celletype">
+            <p id="cell-description">Klikk på en av celletypene til venstre for å lære mer om den.</p>
+            <h3>Typiske Kjennetegn:</h3>
+            <ul id="cell-characteristics">
+                <li>Velg en celletype for å se kjennetegn.</li>
+            </ul>
+            <!-- Quiz-containeren vil bli lagt til her av script.js -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

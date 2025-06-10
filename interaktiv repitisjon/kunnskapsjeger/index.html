@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunnskapsjegeren: Naturfag-lenkeløpet</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kunnskapsjegeren</h1>
+            <p>Finn den mest logiske veien mellom to temaer på Wikipedia!</p>
+        </header>
+
+        <div class="challenge-card">
+            <h2>Ditt Oppdrag:</h2>
+            <div class="mission-details">
+                <div class="start-point">
+                    <h3>Startside:</h3>
+                    <p id="start-topic">Fotosyntese</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="end-point">
+                    <h3>Målside:</h3>
+                    <p id="target-topic">Fossilt brensel</p>
+                </div>
+            </div>
+            <a id="start-link" href="#" target="_blank" class="btn btn-start">Start på Wikipedia (åpnes i ny fane)</a>
+        </div>
+
+        <div class="controls">
+            <button id="new-challenge-btn" class="btn btn-new">Få en Ny Utfordring</button>
+        </div>
+
+        <div class="solution-container">
+            <button id="show-solution-btn" class="btn btn-solution">Vis et Løsningsforslag</button>
+            <div id="solution-path" class="hidden">
+                <h3>En Effektiv Rute:</h3>
+                <p id="solution-text"></p>
+                <h4>Hvorfor denne ruten er god:</h4>
+                <p id="solution-explanation"></p>
+            </div>
+        </div>
+
+        <div class="reflection-box">
+            <h3>Refleksjon (Etter løpet)</h3>
+            <p>Diskuter i par og noter ned svarene:</p>
+            <ol>
+                <li>Hvilken sti tok dere, og hvor mange klikk brukte dere?</li>
+                <li>Hvilken side var den viktigste "broen" som koblet start og mål sammen?</li>
+                <li>Hva var den mest overraskende sammenhengen dere oppdaget?</li>
+                <li>Beskriv med egne ord den naturfaglige koblingen mellom start- og mål-siden.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

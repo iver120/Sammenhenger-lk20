@@ -1,0 +1,144 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --primary-text: #e94560;
+    --secondary-text: #f0f0f0;
+    --accent-color: #0f3460;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--secondary-text);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-text);
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-top: 5px;
+}
+
+.challenge-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.challenge-card h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-text);
+    margin-top: 0;
+}
+
+.mission-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mission-details h3 {
+    color: #c0c0c0;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.mission-details p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.arrow {
+    font-size: 3rem;
+    color: var(--primary-text);
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-start {
+    background-color: var(--primary-text);
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-start:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+.btn-new {
+    background-color: #533483;
+    color: white;
+}
+.btn-new:hover { background-color: #3E2C41; }
+
+.btn-solution {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--secondary-text);
+}
+.btn-solution:hover { background-color: var(--accent-color); }
+
+.hidden { display: none; }
+
+.solution-container {
+    margin: 20px 0;
+}
+
+#solution-path {
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#solution-path h3, #solution-path h4 { color: var(--primary-text); }
+
+.reflection-box {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px dashed var(--accent-color);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.reflection-box h3 { color: var(--primary-text); }
+.reflection-box ol { padding-left: 25px; }

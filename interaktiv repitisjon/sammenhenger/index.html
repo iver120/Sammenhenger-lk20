@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energi: Tråden som Binder Alt Sammen</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Energi: Tråden som Binder Alt Sammen</h1>
+        <p>Klikk på et tema for å se hvordan energi er nøkkelen til å forstå det.</p>
+    </header>
+
+    <div class="main-container">
+        <!-- Den interaktive hub-modellen -->
+        <div class="interactive-hub">
+            <div class="hub-center">ENERGI</div>
+            <div class="topic-node" data-topic="platedrift">Platedrift</div>
+            <div class="topic-node" data-topic="oppvarming">Global Oppvarming</div>
+            <div class="topic-node" data-topic="kroppen">Menneskekroppen</div>
+            <div class="topic-node" data-topic="varme">Varmeoverføring</div>
+        </div>
+
+        <!-- Område for å vise innhold og quiz -->
+        <div class="content-display" id="content-display">
+            <div id="content-inner">
+                <h2 id="content-title">Velkommen!</h2>
+                <img id="content-image" src="" alt="">
+                <p id="content-description">Velg et av temaene rundt energi-sirkelen for å starte utforskningen.</p>
+                <!-- Knapp for å starte quiz legges til her av JS -->
+            </div>
+            
+            <!-- Quiz-containeren (skjult som standard) -->
+            <div id="quiz-container" class="hidden">
+                <h3 id="quiz-question"></h3>
+                <div id="quiz-answers"></div>
+                <div id="quiz-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

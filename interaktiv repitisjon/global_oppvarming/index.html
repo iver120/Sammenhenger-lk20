@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lær om Global Oppvarming</title>
-    <!-- Endret sti til CSS-filen, den ligger nå ett nivå opp -->
     <link rel="stylesheet" href="../stil.css">
     <style>
-        /* Du kan legge til stiler spesifikke for denne siden her,
-           eller i en egen CSS-fil for global oppvarming */
         .content-section {
             max-width: 800px;
             margin: 20px auto;
@@ -18,9 +15,16 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .content-section h2 {
-            color: #00509e; /* Samme farge som andre H2 */
+            color: #00509e;
             border-bottom: 2px solid #d1e0ec;
             padding-bottom: 10px;
+        }
+        .analogy-box {
+            background-color: #eef7ff;
+            border-left: 5px solid #00509e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -34,32 +38,53 @@
         <p>Dette temaet vil utforske årsakene, konsekvensene og mulige løsninger knyttet til global oppvarming.</p>
     </div>
 
+    <!-- NY SEKSJON: FORKLARING AV DRIVHUSEFFEKTEN -->
+    <div class="content-section">
+        <h2>Hvordan fungerer drivhuseffekten?</h2>
+        <p>Drivhuseffekten er en naturlig prosess som holder planeten vår varm nok for liv. Noen gasser i atmosfæren fungerer som glasset i et drivhus: de slipper sollys inn, men hindrer noe av varmen i å slippe ut igjen.</p>
+        <div class="analogy-box">
+            <p><strong>Tenk på det som en dyne:</strong> Atmosfæren er som en dyne rundt Jorden. Drivhusgasser som CO2 gjør dynen tykkere. En tynn dyne er bra og holder oss varme om natten. Men en altfor tykk dyne gjør at vi blir overopphetet. Menneskelige utslipp legger stadig flere lag på denne dynen.</p>
+        </div>
+        <p>Problemet er ikke drivhuseffekten i seg selv, men at våre utslipp har *forsterket* den langt utover det naturlige nivået.</p>
+    </div>
+
     <div class="content-section">
         <h2>Hovedårsaker</h2>
         <ul>
-            <li><strong>Forbrenning av fossilt brensel:</strong> Kull, olje og gass frigjør store mengder karbondioksid (CO2) når de brennes for energi i transport, industri og oppvarming.</li>
-            <li><strong>Avskoging:</strong> Trær absorberer CO2. Når skoger hugges ned eller brennes, frigjøres lagret karbon, og planetens evne til å absorbere CO2 reduseres.</li>
-            <li><strong>Jordbruk:</strong> Husdyrhold (spesielt drøvtyggere) produserer metan (CH4), en potent drivhusgass. Bruk av nitrogengjødsel fører til utslipp av lystgass (N2O).</li>
-            <li><strong>Industrielle prosesser:</strong> Noen industrielle prosesser frigjør drivhusgasser direkte, for eksempel fluorholdige gasser (F-gasser).</li>
-            <li><strong>Avfallshåndtering:</strong> Deponier kan produsere metan når organisk avfall brytes ned uten tilgang på oksygen.</li>
+            <li><strong>Forbrenning av fossilt brensel:</strong> Kull, olje og gass frigjør store mengder karbondioksid (CO2) når de brennes. Dette skjer for eksempel fra bilen du kjører, strømmen til gaming-PCen din, og flyet du tar på ferie.</li>
+            <li><strong>Avskoging:</strong> Trær er naturens karbonstøvsugere. Når skoger hugges ned, mister vi denne evnen, og karbon som var lagret i trærne frigjøres.</li>
+            <li><strong>Jordbruk:</strong> Husdyrhold (spesielt kuer og sauer) produserer metan (CH4), en drivhusgass som er over 25 ganger kraftigere enn CO2 over en 100-årsperiode. Bruk av kunstgjødsel frigjør lystgass (N2O).</li>
+            <li><strong>Industrielle prosesser:</strong> Produksjon av sement, stål og plast krever enorme mengder energi og kan frigi drivhusgasser direkte.</li>
+            <li><strong>Avfallshåndtering:</strong> Når matavfallet ditt havner på en søppelfylling, råtner det og produserer metan.</li>
         </ul>
+        <!-- Idé for interaktivitet: En pie-chart (kakediagram) som viser prosentvis fordeling av utslipp fra de ulike sektorene. Du kan bruke et JavaScript-bibliotek som Chart.js for dette. -->
     </div>
 
     <div class="content-section">
         <h2>Potensielle konsekvenser</h2>
-        <p>Konsekvensene av global oppvarming er omfattende og kan inkludere:</p>
+        <p>Konsekvensene av global oppvarming er omfattende og merkes allerede i dag:</p>
         <ul>
-            <li>Hyppigere og mer intense hetebølger.</li>
-            <li>Endringer i nedbørsmønstre, som fører til tørke i noen områder og flom i andre.</li>
-            <li>Havnivåstigning på grunn av smelting av isbreer og polaris, samt termisk ekspansjon av vann.</li>
-            <li>Tap av biologisk mangfold ettersom arter sliter med å tilpasse seg raske endringer.</li>
-            <li>Forsuring av havene.</li>
-            <li>Økt risiko for ekstremvær som orkaner og stormer.</li>
+            <li>Hyppigere og mer intense hetebølger og skogbranner.</li>
+            <li>Endringer i nedbørsmønstre som gir tørke i noen områder og økt flomfare i andre, som vi har sett med flere flomdager i Innlandet.</li>
+            <li>Havnivåstigning som truer kystbyer verden over.</li>
+            <li>Tap av biologisk mangfold ettersom korallrev blekner og arter mister sine leveområder.</li>
+            <li>Forsuring av havene, som skader skalldyr og plankton – selve fundamentet i havets næringskjede.</li>
         </ul>
-        <p><em>Mer informasjon og interaktive elementer vil bli lagt til her senere.</em></p>
+        <!-- Idé for interaktivitet: Et interaktivt kart der elevene kan klikke på ulike verdensdeler for å se spesifikke konsekvenser for den regionen. -->
     </div>
 
-    <!-- Du kan legge til en link til en JavaScript-fil her hvis du trenger interaktivitet på denne siden -->
-    <!-- <script src="global_oppvarming_script.js"></script> -->
+    <!-- NY SEKSJON: LØSNINGER -->
+    <div class="content-section">
+        <h2>Hva kan gjøres?</h2>
+        <p>Kampen mot global oppvarming krever handling på alle nivåer, fra internasjonale avtaler til personlige valg.</p>
+        <ul>
+            <li><strong>Energiomstilling:</strong> Overgang fra fossilt brensel til fornybare energikilder som sol, vind og vannkraft.</li>
+            <li><strong>Energieffektivisering:</strong> Bruke mindre energi i bygninger, transport og industri. Tenk på etterisolering av hus og overgang til LED-lys.</li>
+            <li><strong>Sirkulærøkonomi:</strong> Gjenbruke og resirkulere materialer for å redusere avfall og behovet for ny produksjon.</li>
+            <li><strong>Bærekraftig arealbruk:</strong> Beskytte og gjenopprette skoger og våtmarker.</li>
+            <li><strong>Teknologiutvikling:</strong> Utvikle nye teknologier som karbonfangst og -lagring.</li>
+            <li><strong>Personlige valg:</strong> Redusere eget forbruk, kaste mindre mat, reise mer miljøvennlig og bruke stemmeretten.</li>
+        </ul>
+    </div>
 </body>
 </html>
